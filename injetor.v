@@ -5,6 +5,11 @@ module injetor(
   output reg [8:0] saida
 );
 
-// insira seu código aqui
+  always @(*) begin
+    if (erro)
+      saida = entrada ^ (1 << n); // injeta erro no bit n
+    else
+      saida = entrada; // sem erro
+  end
 
 endmodule

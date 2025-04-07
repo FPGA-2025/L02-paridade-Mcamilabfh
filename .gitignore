@@ -1,0 +1,6 @@
+test/*.out
+tb
+*.vcd
+gabarito/*
+venv
+yosys2digitaljs
